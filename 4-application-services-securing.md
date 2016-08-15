@@ -22,3 +22,4 @@ $ kubectl get pods
 $ kubectl exec curlpod -- curl https://my-nginx --cacert /etc/nginx/ssl/nginx.crt
 ```
 
+[![asciicast](https://asciinema.org/a/abj69x3ls655hedqrq19pb2c9.png)](https://asciinema.org/a/abj69x3ls655hedqrq19pb2c9)
