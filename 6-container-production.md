@@ -38,7 +38,7 @@ http://kubernetes.io/docs/user-guide/secrets
 ## Authenticating with private registry
 
 ```
-$ kubectl create secret docker-registry myregistrykey --docker-username=janedoe --docker-password=●●●●●●●●●●● --docker-email=neependra.khare@gmail.com
+$ kubectl create secret docker-registry nkhareregistrykey --docker-username=nkharre --docker-password=●●●●●●●●●●● --docker-email=neependra.khare@gmail.com
 ```
 
 Create a pod with following  file
