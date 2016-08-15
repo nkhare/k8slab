@@ -1,6 +1,6 @@
 
 ```
-$ cd https-
+$ cd https-nginx
 $ go get k8s.io/kubernetes/pkg/api
 $ go get k8s.io/kubernetes/pkg/apimachinery/registered
 $ go get k8s.io/kubernetes/pkg/runtim
