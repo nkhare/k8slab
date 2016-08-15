@@ -50,10 +50,12 @@ metadata:
 spec:
   containers:
     - name: foo
-      image: janedoe/awesomeapp:v1
+      image: nkhare/nginx
   imagePullSecrets:
-    - name: myregistrykey
+    - name: nkhareregistrykey
 ```
+
+[![asciicast](https://asciinema.org/a/82xxx53wm2lwq9v61iyylii10.png)](https://asciinema.org/a/82xxx53wm2lwq9v61iyylii10)
 
 
 ## Helper Container
