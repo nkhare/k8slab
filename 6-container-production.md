@@ -33,6 +33,7 @@ $ kubectl create -f redis-secret-deployment.yaml
 
 http://kubernetes.io/docs/user-guide/secrets
 
+[![asciicast](https://asciinema.org/a/9d7za224ei7mgvlhkr88dcmah.png)](https://asciinema.org/a/9d7za224ei7mgvlhkr88dcmah)
 
 ## Authenticating with private registry
 
