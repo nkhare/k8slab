@@ -41,3 +41,5 @@ $ kubectl run curl --image=radial/busyboxplus:curl -i --tty
 nslookup my-nginx:
 ```
 
+
+[![asciicast](https://asciinema.org/a/f2rnlwtd2ph2cnch3b7up3s57.png)](https://asciinema.org/a/f2rnlwtd2ph2cnch3b7up3s57)
