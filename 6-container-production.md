@@ -116,6 +116,12 @@ $ wget https://raw.githubusercontent.com/kubernetes/kubernetes.github.io/release
 
 ## Handling Initialization
 
+- Waiting for other components (like a database or web service) to be available
+- Performing configuration templating from environment variables into a config file
+- Registering the pod into a central database, or fetching remote configuration from that database
+- Downloading application dependencies, seed data, or preconfiguring disk
+
+
 ```
 $ wget https://raw.githubusercontent.com/kubernetes/kubernetes.github.io/release-1.3/docs/user-guide/nginx-init-containers.yaml
 $ kubectl -f nginx-init-containers.yaml
