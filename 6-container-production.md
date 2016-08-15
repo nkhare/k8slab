@@ -25,6 +25,8 @@ data:
   password: MTIzNA==
 ```
 
+[![asciicast](https://asciinema.org/a/ef68brxqobcgbnxapecmsh1mk.png)](https://asciinema.org/a/ef68brxqobcgbnxapecmsh1mk)
+
 Use them in the Pod
 ```
 $ wget https://raw.githubusercontent.com/kubernetes/kubernetes.github.io/release-1.3/docs/user-guide/redis-secret-deployment.yaml
