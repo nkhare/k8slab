@@ -19,7 +19,7 @@ $ curl -k https://10.244.3.5
 $ wget https://raw.githubusercontent.com/kubernetes/kubernetes.github.io/release-1.3/docs/user-guide/curlpod.yaml
 $ kubectl create -f ./curlpod.yaml
 $ kubectl get pods
-$ kubectl exec curlpod -- curl https://my-nginx --cacert /etc/nginx/ssl/nginx.crt
+$ kubectl exec curlpod -- curl https://nginxsvc --cacert /etc/nginx/ssl/nginx.crt
 ```
 
 [![asciicast](https://asciinema.org/a/abj69x3ls655hedqrq19pb2c9.png)](https://asciinema.org/a/abj69x3ls655hedqrq19pb2c9)
