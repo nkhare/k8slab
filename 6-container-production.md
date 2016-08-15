@@ -25,7 +25,6 @@ data:
   password: MTIzNA==
 ```
 
-[![asciicast](https://asciinema.org/a/ef68brxqobcgbnxapecmsh1mk.png)](https://asciinema.org/a/ef68brxqobcgbnxapecmsh1mk)
 
 Use them in the Pod
 ```
@@ -172,3 +171,5 @@ $ kubectl get pods/pod-w-message -o go-template="{{range .status.containerStatus
 $ kubectl get pods/pod-w-message -o go-template="{{range .status.containerStatuses}}{{.lastState.terminated.exitCode}}{{end}}"
 0
 ```
+
+[![asciicast](https://asciinema.org/a/ef68brxqobcgbnxapecmsh1mk.png)](https://asciinema.org/a/ef68brxqobcgbnxapecmsh1mk)
