@@ -1,6 +1,9 @@
 
 ```
-$ cd https-nginx
+$ cd https-
+$ go get k8s.io/kubernetes/pkg/api
+$ go get k8s.io/kubernetes/pkg/apimachinery/registered
+$ go get k8s.io/kubernetes/pkg/runtim
 $ make keys secret KEY=/tmp/nginx.key CERT=/tmp/nginx.crt SECRET=/tmp/secret.json
 $ kubectl create -f /tmp/secret.json
 $ kubectl get secrets
