@@ -18,3 +18,7 @@ $  kubectl get deployment/my-nginx -o template --template="{{.spec.selector}}"
 ```
 $ kubectl delete deployment/my-nginx
 ```
+
+[![asciicast](https://asciinema.org/a/7t4qds1jmd00qex9oiggavam4.png)](https://asciinema.org/a/7t4qds1jmd00qex9oiggavam4)
+
+<script type="text/javascript" src="https://asciinema.org/a/7t4qds1jmd00qex9oiggavam4.js" id="asciicast-7t4qds1jmd00qex9oiggavam4" async></script>
