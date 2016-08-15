@@ -13,4 +13,4 @@ $ curl https://<EXTERNAL-IP> -k
 $ kubectl describe service nginxsvc
 ```
  
-
+[![asciicast](https://asciinema.org/a/3hvafr5kqctwdxyls178c8hyp.png)](https://asciinema.org/a/3hvafr5kqctwdxyls178c8hyp)
