@@ -154,3 +154,4 @@ $ kubectl get rs
 ```
 
 
+[![asciicast](https://asciinema.org/a/6c5y9h3znombrn832v65tkxs2.png)](https://asciinema.org/a/6c5y9h3znombrn832v65tkxs2)
