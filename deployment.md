@@ -4,7 +4,7 @@ $ wget https://raw.githubusercontent.com/kubernetes/kubernetes.github.io/release
 
 ```
 
-##create the nginx deployment
+##Create the nginx deployment
 ```
 $kubectl create -f docs/user-guide/nginx-deployment.yaml --record
 ```
@@ -72,7 +72,7 @@ $ kubectl rollout status deployments nginx-deployment
 $ kubectl get rs
 
 ```
-##Get the pos counts
+##Get the pod counts
 ```
 $ kubectl get pods
 
