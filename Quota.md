@@ -298,5 +298,7 @@ requests.cpu        200m  1
 requests.memory     512Mi 1Gi
 
 ```
+##Watch all the commands in action 
 
+[![asciicast](https://asciinema.org/a/6dy88z53ootsoe1oyjmm80j5e.png)](https://asciinema.org/a/6dy88z53ootsoe1oyjmm80j5e)
 
