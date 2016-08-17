@@ -29,5 +29,6 @@ By default the entry is created in *<service-name>.<namespace-name>.svc.cluster.
 If you want to reach across namespaces, you need to use the fully qualified domain name (FQDN).
 
 
-
+## References
+http://blog.kubernetes.io/2016/08/kubernetes-namespaces-use-cases-insights.html
 
