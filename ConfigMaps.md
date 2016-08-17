@@ -130,4 +130,4 @@ ConfigMaps reside in a namespace. They can only be referenced by pods in the sam
 
 ##Watch all the above commands in action!!
 
-
+[![asciicast](https://asciinema.org/a/2b9hg20q6y71t7v4z9cxuy7sl.png)](https://asciinema.org/a/2b9hg20q6y71t7v4z9cxuy7sl)
