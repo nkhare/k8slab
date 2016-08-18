@@ -54,6 +54,6 @@ Sat, 27 Jun 2015 13:44:44 +0200    Sat, 27 Jun 2015 13:44:44 +0200    1    {kube
 
 ```
 
-##Watch out all the above command in action
+##Watch out all the above commands in action
 
 [![asciicast](https://asciinema.org/a/91g02511t85xdm8npq4n918rr.png)](https://asciinema.org/a/91g02511t85xdm8npq4n918rr)
