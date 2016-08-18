@@ -5,6 +5,13 @@ $ cd /kubernetes/docs/user-guide/
 
 ```
 
+##Copy the existing nginx deployment file and rename and modify content
+```
+
+$ cp -v  nginx-deployment.yaml nginx-rolling-update.yaml
+
+```
+
 ##Update the existing image and pod has been crated with this file
 
 ```
