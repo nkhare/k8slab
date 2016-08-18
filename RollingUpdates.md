@@ -38,12 +38,17 @@ Created my-nginx-ccba8fbd8cc8160970f63f9a2696fc46
 
 ```
 $ kubectl get pods -l app=nginx-rolling-update -L deployment
-NAME                                              READY     STATUS    RESTARTS   AGE       DEPLOYMENT
-my-nginx-ccba8fbd8cc8160970f63f9a2696fc46-k156z   1/1       Running   0          1m        ccba8fbd8cc8160970f63f9a2696fc46
-my-nginx-ccba8fbd8cc8160970f63f9a2696fc46-v95yh   1/1       Running   0          35s       ccba8fbd8cc8160970f63f9a2696fc46
-my-nginx-divi2                                    1/1       Running   0          2h        2d1d7a8f682934a254002b56404b813e
-my-nginx-o0ef1                                    1/1       Running   0          2h        2d1d7a8f682934a254002b56404b813e
-my-nginx-q6all                                    1/1       Running   0          8m        2d1d7a8f682934a254002b56404b813e
+NAME                                                          READY     STATUS    RESTARTS   AGE       DEPLOYMENT
+nginx-rolling-update-268d35d1df1850b31556cba4dba6a256-hkn9w   1/1       Running   0          42m       268d35d1df1850b31556cba4dba6a256
+nginx-rolling-update-268d35d1df1850b31556cba4dba6a256-s37w4   1/1       Running   0          39m       268d35d1df1850b31556cba4dba6a256
+nginx-rolling-update-268d35d1df1850b31556cba4dba6a256-x6ptu   1/1       Running   0          40m       268d35d1df1850b31556cba4dba6a256
+nginx-rolling-update-9izbx                                    1/1       Running   0          30m       268d35d1df1850b31556cba4dba6a256
+nginx-rolling-update-c3pdo                                    1/1       Running   0          30m       268d35d1df1850b31556cba4dba6a256
+nginx-rolling-update-dmlaw                                    1/1       Running   0          30m       268d35d1df1850b31556cba4dba6a256
+nginx-rolling-update-dvhzm                                    1/1       Running   0          30m       268d35d1df1850b31556cba4dba6a256
+nginx-rolling-update-rv0lc                                    1/1       Running   0          30m       268d35d1df1850b31556cba4dba6a256
+nginx-rolling-update-yf3yh                                    1/1       Running   0          30m       268d35d1df1850b31556cba4dba6a256
+nginx-rolling-update-z5x0c                                    1/1       Running   0          30m       268d35d1df1850b31556cba4dba6a256
 
 ```
 
