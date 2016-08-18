@@ -1,7 +1,7 @@
 ##Get the files
 
 ```
-exec-liveness.yam http-liveness.yaml http-liveness-named-port.yaml
+exec-liveness.yam http-liveness.yaml httpd-liveness-named-port.yaml
 
 From kubernetes source : /kubernetes/docs/user-guide/liveness
 
@@ -11,13 +11,11 @@ Sidenote: One file was missing ,so I grab from the site and put it inside the di
 
 ## Utilise those file to check the output.
 
-```
-
-##Get your hands dirty
 
 ```
 $ kubectl create -f docs/user-guide/liveness/exec-liveness.yaml
 $ kubectl create -f docs/user-guide/liveness/http-liveness.yaml
+$ kubeclt crate -f docs/user-guide/liveness/httpd-liveness-named-port.yaml
 
 ```
 
