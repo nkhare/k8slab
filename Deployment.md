@@ -3,7 +3,27 @@
 $ wget https://raw.githubusercontent.com/kubernetes/kubernetes.github.io/release-1.3/docs/user-guide/nginx-deployment.yaml
 
 ```
+## Here is how the yaml file look like
 
+```
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.7.9
+        ports:
+        - containerPort: 80
+
+```
 ##Create the nginx deployment
 ```
 $kubectl create -f docs/user-guide/nginx-deployment.yaml --record
@@ -149,6 +169,6 @@ $ kubectl rollout status deployment/nginx-deployment
 $ kubectl get rs 
 
 ```
-##Check the all the above command in action!!!
+##Check all the above commands in action!!!
 
 [![asciicast](https://asciinema.org/a/6c5y9h3znombrn832v65tkxs2.png)](https://asciinema.org/a/6c5y9h3znombrn832v65tkxs2)
