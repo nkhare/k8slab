@@ -64,12 +64,6 @@ nginx-rolling-update-z5x0c                                    1/1       Running 
 ```
 
 $ kubectl rolling-update nginx-rolling-update --rollback
-Setting "my-nginx" replicas to 1
-Continuing update with existing controller my-nginx.
-Scaling up nginx from 1 to 1, scaling down my-nginx-ccba8fbd8cc8160970f63f9a2696fc46 from 1 to 0 (keep 1 pods available, don't exceed 2 pods)
-Scaling my-nginx-ccba8fbd8cc8160970f63f9a2696fc46 down to 0
-Update succeeded. Deleting my-nginx-ccba8fbd8cc8160970f63f9a2696fc46
-replicationcontroller "my-nginx" rolling updated
 
 ```
 
