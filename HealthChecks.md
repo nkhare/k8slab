@@ -1,10 +1,63 @@
 ##Get the files
 
 ```
-exec-liveness.yam http-liveness.yaml 
+exec-liveness.yaml http-liveness.yaml 
 
 From kubernetes source : /kubernetes/docs/user-guide/liveness
 
+
+```
+##Here are those two yaml files look like 
+
+
+##This is exec-liveness.yaml
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    test: liveness
+  name: liveness-exec
+spec:
+  containers:
+  - args:
+    - /bin/sh
+    - -c
+    - echo ok > /tmp/health; sleep 10; rm -rf /tmp/health; sleep 600
+    image: gcr.io/google_containers/busybox
+    livenessProbe:
+      exec:
+        command:
+        - cat
+        - /tmp/health
+      initialDelaySeconds: 15
+      timeoutSeconds: 1
+    name: liveness-exec
+```
+
+##And below is http-liveness.yaml
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    test: liveness
+  name: liveness-http
+spec:
+  containers:
+  - args:
+    - /server
+    image: gcr.io/google_containers/liveness
+    livenessProbe:
+      httpGet:
+        path: /healthz
+        port: 8080
+        httpHeaders:
+          - name: X-Custom-Header
+            value: Awesome
+      initialDelaySeconds: 15
+      timeoutSeconds: 1
+    name: liveness-http
 
 ```
 
