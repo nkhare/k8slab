@@ -30,7 +30,7 @@ spec:
 ## Update it 
 ```
 $ kubectl rolling-update nginx-rolling-update --image=nginx:1.9.1
-Created my-nginx-ccba8fbd8cc8160970f63f9a2696fc46
+Created nginx-rolling-update-268d35d1df1850b31556cba4dba6a256                                                                                                            
 
 ```
 
