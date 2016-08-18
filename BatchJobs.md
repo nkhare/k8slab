@@ -87,4 +87,4 @@ $ kubectl delete jobs/pi
 
 ## Watch out all the commands in action!!
 
-
+[![asciicast](https://asciinema.org/a/cdvi8zy1jmvjg6vk838240mcd.png)](https://asciinema.org/a/cdvi8zy1jmvjg6vk838240mcd)
