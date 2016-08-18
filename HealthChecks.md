@@ -1,11 +1,10 @@
 ##Get the files
 
 ```
-exec-liveness.yam http-liveness.yaml httpd-liveness-named-port.yaml
+exec-liveness.yam http-liveness.yaml 
 
 From kubernetes source : /kubernetes/docs/user-guide/liveness
 
-Sidenote: One file was missing ,so I grab from the site and put it inside the dir 
 
 ```
 
@@ -15,7 +14,6 @@ Sidenote: One file was missing ,so I grab from the site and put it inside the di
 ```
 $ kubectl create -f docs/user-guide/liveness/exec-liveness.yaml
 $ kubectl create -f docs/user-guide/liveness/http-liveness.yaml
-$ kubeclt crate -f docs/user-guide/liveness/httpd-liveness-named-port.yaml
 
 ```
 
@@ -58,5 +56,4 @@ Sat, 27 Jun 2015 13:44:44 +0200    Sat, 27 Jun 2015 13:44:44 +0200    1    {kube
 
 ##Watch out all the above command in action
 
-
-
+[![asciicast](https://asciinema.org/a/91g02511t85xdm8npq4n918rr.png)](https://asciinema.org/a/91g02511t85xdm8npq4n918rr)
