@@ -218,6 +218,20 @@ $ kubectl describe nodes gke-kubernetes-default-pool-b3d6d977-77wi | grep diskty
                         disktype=ssd
 
 ```
+
+##Built in node labels
+
+```
+kubernetes.io/hostname
+
+failure-domain.beta.kubernetes.io/zone
+
+failure-domain.beta.kubernetes.io/region
+
+beta.kubernetes.io/instance-type
+
+```
+
 ## Node afinity is a Alpha featue ...lets not discuss it right now..may be sometime ..
 
 
