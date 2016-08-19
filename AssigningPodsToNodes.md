@@ -5,7 +5,7 @@ Generally this is unnecessary, as the SCHEDULER will take care of things for you
 
 ```
 
-##But,situation compells you to do it ..heck
+##But,situation compelled you to do it ..heck
 
 ```
 kubectl label nodes <node-name> <label-key>=<label-value>
