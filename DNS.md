@@ -27,7 +27,7 @@ pod "busybox" created
 
 ```
 
-##Get te sstatus 
+##Get the status 
 ```
 $ kubectl get pods busybox
 NAME      READY     STATUS    RESTARTS   AGE
