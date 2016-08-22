@@ -269,5 +269,66 @@ pod "counter" deleted
 
 ##Integrate with GCE with fluentd
 
+##Get a gce-fluentd yaml file
 
+```
+$ cd /kubernetes/cluster/addons/gci 
+$ ls
+fluentd-gcp.yaml  README.md
+
+```
+
+##How it look like inside the file!
+
+```
+# This config should be kept as similar as possible to the one at
+# cluster/saltbase/salt/fluentd-gcp/fluentd-gcp.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+- name: fluentd-cloud-logging
+    image: gcr.io/google_containers/fluentd-gcp:1.21
+    command:
+      - '/bin/sh'
+      - '-c'
+      # This is pretty hacky, but ruby relies on libsystemd's native code, and
+      # the ubuntu:16.04 libsystemd doesn't play nice with the journal on GCI
+      # hosts. Work around the problem by copying in the host's libsystemd.
+      - 'rm /lib/x86_64-linux-gnu/libsystemd* && cp /host/lib/libsystemd* /lib/x86_64-linux-gnu/ && /usr/sbin/google-fluentd -q -c /etc/google-fluentd/google-fluentd-journal.conf'
+    resources:
+      limits:
+        memory: 200Mi
+      requests:
+        # Any change here should be accompanied by a proportional change in CPU
+        # requests of other per-node add-ons (e.g. kube-proxy).
+        cpu: 80m
+        memory: 200Mi
+    volumeMounts:
+    - name: varlog
+      mountPath: /var/log
+    - name: varlibdockercontainers
+      mountPath: /var/lib/docker/containers
+      readOnly: true
+    - name: journaldir
+      mountPath: /var/log/journal
+    - name: libsystemddir
+      mountPath: /host/lib
+  terminationGracePeriodSeconds: 30
+  volumes:
+  - name: varlog
+    hostPath:
+      path: /var/log
+  - name: varlibdockercontainers
+    hostPath:
+      path: /var/lib/docker/containers
+  - name: journaldir
+    hostPath:
+      path: /var/log/journal
+  - name: libsystemddir
+    hostPath:
+      path: /usr/lib64
+
+```
+
+## We need to head over to the gce and check the logging section
 
