@@ -12,7 +12,7 @@ $ sysdig -w cloudyuga-net.scap
 ##Capture all the events in the latest 24 hours and save them to disk organized in files containing 1 hour of system activity each
 
 ```
-$ sysdig -G 3600 -W 24 -w cloudyuga-net-2.scap
+$ sysdig -G 3600 -W 3 -w cloudyuga-net-2.scap
 
 ```
 
