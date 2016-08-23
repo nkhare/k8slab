@@ -23,7 +23,7 @@ $ sysdig -r cloudyuga-net-2.scap
 
 ```
 
-##O hell!! it scroll through the terminal to fast to read..heck...do this :)
+##O hell!! it scroll on the terminal too fast to read..heck...do this :)
 
 ```
 $ sysdig -r cloudyuga-net-2.scap | less
