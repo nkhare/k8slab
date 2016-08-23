@@ -58,7 +58,7 @@ $ sysdig -cl
 
 ```
 
-##Use the spy_ip chisel to look at the data exchanged with 192.168.1.157:
+##Use the spy_ip chisel to look at the data exchanged with YOUR IP(private/public)
 
 ```
 $ sysdig -c spy_ip `curl ifconfig.me`
