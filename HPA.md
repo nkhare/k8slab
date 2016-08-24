@@ -107,5 +107,5 @@ php-apache   Deployment/php-apache/scale   50%       0%        1         10     
 ```
 
 
-
+## Horizontal Pod Autoscaling
 
