@@ -1,4 +1,4 @@
-##Whata is it?
+##What is it?
 
 ```
 
