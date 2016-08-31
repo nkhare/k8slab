@@ -126,7 +126,7 @@ $ kubectl exec -it redis redis-cli
 ConfigMaps reside in a namespace. They can only be referenced by pods in the same namespace.
 
 ```
-
+##That's all
 
 ##Watch all the above commands in action!!
 
