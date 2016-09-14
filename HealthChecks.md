@@ -1,10 +1,8 @@
 ##Get the files
 
 ```
-exec-liveness.yaml http-liveness.yaml 
-
-From kubernetes source : /kubernetes/docs/user-guide/liveness
-
+$ wget https://raw.githubusercontent.com/kubernetes/kubernetes.github.io/master/docs/user-guide/liveness/exec-liveness.yaml
+$ wget https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/liveness/http-liveness.yaml
 
 ```
 ##Here are those two yaml files look like 
